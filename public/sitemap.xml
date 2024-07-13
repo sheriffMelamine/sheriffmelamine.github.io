@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
+    <loc>//localhost:1313/about/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/about/about/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/series/how-to-use-poison/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/hugo/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/introducing-poison/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/introduction/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/series/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url>
 </urlset>
