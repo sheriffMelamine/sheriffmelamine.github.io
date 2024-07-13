@@ -2,34 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2022-11-30T15:04:46-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2022-11-30T15:04:46-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/about/</loc>
+    <loc>/about/about/</loc>
     <lastmod>2022-11-30T15:04:46-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/how-to-use-poison/</loc>
+    <loc>/gallery/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>/research/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>/resume/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>/gallery/resume/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>/research/research/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>/resume/resume/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>/series/how-to-use-poison/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/introducing-poison/</loc>
+    <loc>/posts/introducing-poison/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/introduction/</loc>
+    <loc>/tags/introduction/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/</loc>
+    <loc>/series/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url>
 </urlset>
