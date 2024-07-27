@@ -8,10 +8,10 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 # disqusShortname = "yourDisqusShortname"
 
 [params]
-    brand = "AIFerdous"                      # name of your site - appears in the sidebar
-    # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-    # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
-    description = "Hey! This is Ahmed Imtiaz Ferdous. Welcome to my personal website." # Used as default meta description if not specified in front matter
+    brand = "Ahmed Imtiaz Ferdous"#"AIFerdous"                      # name of your site - appears in the sidebar
+    #remote_brand_image = '/picture.jpg' # path to a remote file
+    brand_image = "/about/images/picture.png"    # path to the image shown in the sidebar
+    description = "" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
@@ -29,7 +29,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         {Name = "Resume", URL = "/resume/", HasChildren = false},
         {Name = "Posts", URL = "/posts/", HasChildren = false},
         {Name = "Research", URL = "/research/", HasChildren = false},
-        {Name = "Gallery", URL = "/gallery/", HasChildren = false}
+        {Name = "Events", URL = "/events/", HasChildren = false}
         
     ]
 
@@ -46,7 +46,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     #matrix_url = "https://matrix.org"
     telegram_url = "https://t.me/AIFerdous"
     #tryhackme_url = "https://tryhackme.com"
-    #twitter_url = "https://twitter.com"
+    #twitter_url = "'file:///home/aiferdous/Downloads/picture.jpg'"
     #xmpp_url = "https://xmpp.org"
     youtube_url = "https://youtube.com/@ahmedimtiaz4187"
 
@@ -58,23 +58,23 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
     # Hex colors for your sidebar.
     moon_sun_background_color = "#515151"   # default is #515151
-    moon_sun_color = "#FFF"                 # default is #FFF
-    sidebar_a_color = "#FFF"                # default is #FFF
-    sidebar_bg_color = "#202020"            # default is #202020
-    sidebar_h1_color = "#FFF"               # default is #FFF
+    moon_sun_color = "#FB3"                  # default is #FFF
+    sidebar_a_color = "#FB3"                 # default is #FFF
+    sidebar_bg_color = "#252525"            # default is #202020
+    sidebar_h1_color = "#FB3"               # default is #FFF
     sidebar_img_border_color = "#515151"    # default is #515151
     sidebar_p_color = "#909090"             # default is #909090
-    sidebar_socials_color = "#FFF"          # default is #FFF
+    sidebar_socials_color = "#FB3"           # default is #FFF
 
     # Hex colors for your content in light mode.
     code_color = "#000"                     # default is #000
     code_background_color = "#E5E5E5"       # default is #E5E5E5
     code_block_color = "#FFF"               # default is #FFF
     code_block_background_color = "#272822" # default is #272822
-    content_bg_color = "#FAF9F6"            # default is #FAF9F6
+    content_bg_color = "#DDD"            # default is #FAF9F6
     date_color = "#515151"                  # default is #515151
-    link_color = "#268BD2"                  # default is #268BD2
-    list_color = "#5A5A5A"                  # default is #5A5A5A
+    link_color = "#B02513"                  # default is #268BD2
+    list_color = "#4A4A4A"                  # default is #5A5A5A
     post_title_color = "#303030"            # default is #303030
     table_border_color = "#E5E5E5"          # default is #E5E5E5
     table_stripe_color = "#F9F9F9"          # default is #F9F9F9
