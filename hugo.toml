@@ -10,7 +10,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 [params]
     brand = "Ahmed Imtiaz Ferdous"#"AIFerdous"                      # name of your site - appears in the sidebar
     #remote_brand_image = '/picture.jpg' # path to a remote file
-    brand_image = "/about/images/picture.png"    # path to the image shown in the sidebar
+    brand_image = "/about/picture.png"    # path to the image shown in the sidebar
     description = "" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
