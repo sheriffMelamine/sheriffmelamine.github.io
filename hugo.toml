@@ -10,10 +10,10 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 [params]
     brand = "Ahmed Imtiaz Ferdous"#"AIFerdous"                      # name of your site - appears in the sidebar
     #remote_brand_image = '/picture.jpg' # path to a remote file
-    brand_image = "/about/picture.jpg"    # path to the image shown in the sidebar
+    brand_image = "/images/picture.png"    # path to the image shown in the sidebar
     description = "" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
-    # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+    favicon = "favicon.ico"             # path to favicon (defaults to favicon.png)
 
     front_page_content = ["about"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
@@ -28,8 +28,8 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         #{Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Resume", URL = "/resume/", HasChildren = false},
         {Name = "Posts", URL = "/posts/", HasChildren = false},
-        {Name = "Research", URL = "/research/", HasChildren = false},
-        {Name = "Events", URL = "/events/", HasChildren = false}
+        #{Name = "Research", URL = "/research/", HasChildren = false},
+        {Name = "Gallery", URL = "/gallery/", HasChildren = false}
         
     ]
 
@@ -105,7 +105,8 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
                                           # For this to work though og_image and brand_url must be a path inside the assets directory
                                           # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
-
+[params.meta]
+    favicon = true
 [taxonomies]
     series = 'series'
     tags = 'tags'

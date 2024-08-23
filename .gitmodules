@@ -1,6 +1,4 @@
 [submodule "themes/poison"]
 	path = themes/poison
-	url = https://github.com/lukeorth/poison.git
-[submodule "poison"]
-	path = poison
 	url = https://github.com/sheriffMelamine/poison.git
+

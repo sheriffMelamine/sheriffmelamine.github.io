@@ -10,20 +10,25 @@ ___
 Graduated in 2024
 ___
 ##	Skills
-|Category|Instances|
-|---|---|
-|Coding Languages| *C/C++, Python, MATLAB, Bash, LaTeX, HTML, MarkDown*|
-|Python Modules| *numpy, matplotlib, sci, cv*|
-|C++ Libraries| *eigen*|
-|Software|*ROS, MATLAB, Solidworks, Ubuntu, kivy, hugo, COMSOL, MS Office*|
-|Hardware|*Raspberry Pi, Arduino, ESP8266,I2C,*|
+```C/C+``` ```Python``` ```MATLAB``` ```ROS``` ```Linux``` ```Raspberry Pi``` ```Arduino``` ```ML``` ```Git``` ```OpenCV``` ```SolidWorks``` ```Pixhawk``` ```Gazebo``` ```MS Office``` ```COMSOL``` ```LaTeX``` ```NumPy``` ```SciPy``` ```Kivy```
 ___
 
-##	Professional Experience
+##	Work Experience
+**Internship**  
+*Industrial Training at EGCB Power Plant*  
+Completed in November 2023
+
+**Sub-team Leader**  
+*Autonomy and Communication*  
+*Software and Autonomy Sub-team*  
+*Team Interplanetar - BUET Mars Rover Team*  
+Promoted in August 2023
+
+**Sub-team Member**  
+*Software Sub-team*  
+*Team Interplanetar - BUET Mars Rover Team*  
+Recruited in July 2021 
 ___
-##	Courses and Certifications
-___
-##	Achievements and Affliations
-___  
-[*Click on this link for downloading CV*](http://link.com "Download CV")
+
+[*Click to View Curriculum Vitae*](https://drive.google.com/file/d/1hE31j5-g41Swl8eJVyIG6-gslc9pRT_Z/view?usp=sharing "View CV")
 
