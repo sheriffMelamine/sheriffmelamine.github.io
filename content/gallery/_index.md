@@ -4,4 +4,16 @@ draft: false
 layout: single
 ---
 
-*On Progress...*
+![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")
+![image](/gallery/images/egcb.jpg#gallery "During my industrial training in EGCB.")
+![image](/gallery/images/rover-group.jpg#gallery "A group photo after the hectic journey of University Rover Challenge.")
+![image](/gallery/images/rover-ready.jpg#gallery "Rover finally ready to go!")
+![image](/gallery/images/rover-prepare.jpg#gallery "Setting up the rover for the contest")
+![image](/gallery/images/concert-2.jpg#gallery "Group photo of us playing during Rag Concert.")
+![image](/gallery/images/concert-3.jpg#gallery "First Concert in my senior years")
+![image](/gallery/images/concert-1.jpg#gallery "During my first performance in BUET Rag Concert.")
+![image](/gallery/images/tripsy-showcase.jpg#gallery "During our Project Showcasing for the Tricopter.")
+![image](/gallery/images/tripsy-flight.gif#gallery "Our Tricopter finally on air!")
+![image](/gallery/images/tripsy-rain.jpg#gallery "We had our drone ready, but.....rain happened")
+![image](/gallery/images/tripsy-ready.jpg#gallery "Set our tricopter ready to fly!")
+
