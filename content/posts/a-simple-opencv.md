@@ -170,7 +170,7 @@ for i in range(0,4):
 
 ![Figure 13](/posts/a-simple-opencv/scene0final.jpg#gallery)
 
-Similary, Two or more contours in the same image can also be identified. In my GitHub repository named [A-Simple-OpenCV-Code-For-ARTag-Detection](), I have put two codes, both following the same approach. The first code is the one discussed here, and the other one is for detecting two AR Tags in the same picture and determining the midpoint between their center-to-center distance.
+Similary, Two or more contours in the same image can also be identified. In my GitHub repository named [A-Simple-OpenCV-Code-For-ARTag-Detection](https://github.com/sheriffMelamine/A-Simple-OpenCV-Code-For-ARTag-Detection), I have put two codes, both following the same approach. The first code is the one discussed here, and the other one is for detecting two AR Tags in the same picture and determining the midpoint between their center-to-center distance.
 
 This problem was given as a task for recruitment in Team Interplaneter Software Sub-Team, which is the Mars Rover Team of BUET, in 2021. This is the solution that I had came up with, which I wanted to share for the readers.
 ##	The Complete Code
