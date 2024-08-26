@@ -15,7 +15,7 @@ For mathematical modeling of the testbench, rigid body assumptions are considere
 The testbench involves three different coordinate body frames for the rings and drone and one earth frame or the global frame where the testbench base is established. The following figure shows the body frames and the earth frame with their coordinates shifted for convenience of demonstration. The actual origin of all body frames coincides with the shaft frame as shown, which is the CG of the testbench.  
 
 
-![Figure 1](/posts/images/Testbench-1.png#center "The earth frame and the body frames representing outer, inner gimbals and inner shaft respectively")
+![Figure 1](/posts/testbench/Testbench-1.png#center "The earth frame and the body frames representing outer, inner gimbals and inner shaft respectively")
 
 
 ##	Earth and Body Frames 
@@ -24,7 +24,7 @@ To transfer from one frame to another, the following relation as can be seen in 
 
  
 
-![Figure 2](/posts/images/Testbench-2.png#center "Transfer matrices with their corresponding rotations and their relation with each frames") 
+![Figure 2](/posts/testbench/Testbench-2.png#center "Transfer matrices with their corresponding rotations and their relation with each frames") 
 
  
 

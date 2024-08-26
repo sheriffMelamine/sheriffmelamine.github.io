@@ -119,7 +119,7 @@
         --sidebar-a-color: #FB3;
         --sidebar-socials-color: #FB3;
         --text-color: #222;
-        --bkg-color: #DDD;
+        --bkg-color: #CCC;
         --post-title-color: #303030;
         --list-color: #4A4A4A;
         --link-color: #B02513;
@@ -461,408 +461,231 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | Themed with <a
   
 </div>
 
-  <p><em>Poison</em> is a <strong>clean</strong>, <strong>professional</strong> Hugo theme designed to <strong>captivate</strong> your readers.</p>
-<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong>.  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
-<p>All the static assets for the site (JS files, CSS, and fonts) are located within the theme&rsquo;s <em>/assets/</em> directory.  <strong>That way you know <em>exactly</em> what&rsquo;s going onto your site</strong>.</p>
-<p>Check out our demo site&rsquo;s analytics <a href="https://plausible.lukeorth.com/poison.lukeorth.com" target="_blank">here</a> to gauge community interest in the theme.</p>
-<h2 id="features">Features</h2>
-<p>In addition to the standard Built-in templates and shortcodes that come with Hugo, <em>Poison</em> offers some unique features of its own.</p>
-<h3 id="light--dark-mode">Light &amp; dark mode</h3>
-<p>Give readers the choice to read in light or dark mode.  The user&rsquo;s preference is remembered and saved in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.</p>
-<h3 id="table-of-contents">Table of contents</h3>
-<p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width &gt; 1600 pixels</em>).</p>
-<p>If you prefer not to display a table of contents, you can disable them site-wide in your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hideToc</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#66d9ef">true</span></span></span></code></pre></div>
-<p>Alternatively, you can choose to disable the table of contents on a per-post basis by putting the flag in the frontmatter of an individual post.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Example to demonstrate how to hide the table of contents on a single post&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2023-07-10</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">draft</span>: <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">hideToc</span>: <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;Hugo&#34;</span>]
-</span></span><span style="display:flex;"><span>---</span></span></code></pre></div>
-<h3 id="comments">Comments</h3>
-<p>Facilitate discourse by allowing users to comment on your posts.  <em>Poison</em> currently supports two different commenting engines for this purpose &ndash; <a href="https://disqus.com/" target="_blank">Disqus</a> and <a href="https://remark42.com/" target="_blank">Remark42</a>.</p>
-<p><strong>Note</strong>: <em>Enabling comments will add external dependencies.</em></p>
-<ul>
-<li><a href="https://about.disqus.com/disqus-demo-page" target="_blank">Disqus Demo Site</a></li>
-<li><a href="https://remark42.com/demo/" target="_blank">Remark42 Demo Site</a></li>
-</ul>
-<p><em><strong>Disqus</strong></em> is free and easy to use.  Checkout the <a href="https://gohugo.io/content-management/comments/" target="_blank">Hugo docs</a> to get started.  Once you&rsquo;ve created a <em>Disqus</em> account, you can activate it in the <em>Poison</em> theme by adding a single line to your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>disqusShortname = &#39;yourDisqusShortname&#39;</span></span></code></pre></div>
-<p>This is a great option for people that don&rsquo;t want to bother with self-hosting their own commenting engine; however, it has some drawbacks.  Because <em>Disqus</em> provides this service for free, they recoup any financial loss by injecting third-party ad trackers onto your website.  These trackers help to collect and sell information about your users, while also negatively affecting your site&rsquo;s speed.</p>
-<p>Even still, <em>Disqus</em> may be the best solution depending on your situation (we use it on this demo site).  The above paragraph is only meant to highlight its trade-offs and not meant to discourage its use entirely.</p>
-<p><em><strong>Remark42</strong></em> is a lightweight, open source commenting engine that doesn&rsquo;t spy on your users.  The downside is that you must host it yourself.  Checkout the <em>Remark42</em> <a href="https://remark42.com/" target="_blank">documentation</a> to get started.  I also found <a href="https://www.devbitsandbytes.com/setting-up-remark42-from-scratch/" target="_blank">this blog post</a> helpful when setting it up on <a href="https://lukeorth.com" target="_blank">my site</a>.</p>
-<p>Once everything is set up, you can activate it in the <em>Poison</em> theme by including the following in the <code>[params]</code> section of your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[params]
-</span></span><span style="display:flex;"><span>    remark42 = true
-</span></span><span style="display:flex;"><span>    remark42_host = &#34;https://yourhost.com&#34;
-</span></span><span style="display:flex;"><span>    remark42_site_id = &#34;your_site_id&#34;</span></span></code></pre></div>
-<h3 id="analytics">Analytics</h3>
-<p>Gain insights on your users.  Poison currently supports <a href="https://plausible.io" target="_blank">Plausible</a> which is available via a paid service or by <a href="https://github.com/plausible/analytics" target="_blank">self-hosting</a>.</p>
-<p><strong>Note</strong>: <em>Enabling analytics will add external dependencies.</em></p>
-<p><strong>Check out our demo site&rsquo;s Plausible analytics <a href="https://plausible.lukeorth.com/poison.lukeorth.com" target="_blank">here</a>!</strong></p>
-<p>Once you&rsquo;ve established your Plausible instance, you can activate it by adding three lines to your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible</span> = <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible_domain</span> = <span style="color:#e6db74">&#34;myblog.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible_script</span> = <span style="color:#e6db74">&#34;https://plausible.myblog.com/js/script.js&#34;</span></span></span></code></pre></div>
-<p>This will insert the necessary code in the <code>&lt;head&gt;</code> on each page and will allow your Plausible instance to collect a limited set of data on your users.</p>
-<p>For reference, the configuration above would add the following code to each page.  Adjust according to your specific environment.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;script defer data-domain=&#34;myblog.com&#34; src=&#34;https://plausible.myblog.com/js/script.js&#34;&gt;&lt;/script&gt;</span></span></code></pre></div>
-<h3 id="email-newsletters">Email newsletters</h3>
-<p>Allow users to subscribe to your blog newsletters via email.
-Poison currently supports <a href="https://listmonk.app/" target="_blank">Listmonk</a> which is available via <a href="https://github.com/knadh/listmonk" target="_blank">self-hosting</a>.
-Listmonk is a standalone, self-hosted, newsletter and mailing list manager.
-The downside is that you must host it yourself.
-Checkout the Listmonk <a href="https://listmonk.app/docs/" target="_blank">documentation</a> to get started.</p>
-<p>Once you&rsquo;ve established your Listmonk instance, activate it by adding these lines to your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk</span> = <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_host</span> = <span style="color:#e6db74">&#34;https://listmonk.your_domain.tld&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_list_uiid</span> = <span style="color:#e6db74">&#34;YOUR_NEWSLETTERS_LIST_UIID&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_form_text</span> = <span style="color:#e6db74">&#34;Subscribe to my newsletters&#34;</span>       <span style="color:#75715e"># default: Subscribe to my newsletters</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_success_message</span> = <span style="color:#e6db74">&#34;Thanks for subscribing&#34;</span>      <span style="color:#75715e"># default: Thanks for subscribing</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_error_message</span> = <span style="color:#e6db74">&#34;Something went wrong&#34;</span>          <span style="color:#75715e"># default: Sorry, something went wrong. Please, try again</span></span></span></code></pre></div>
-<p>This will insert a form at the bottom of each post&rsquo;s content.
-The user will be subscribed to the newsletter specified in the <code>listmonk_subscription_list_uiid</code> parameter.</p>
-<h3 id="series">Series</h3>
-<p>Sensibly link and display content in &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
-<p>This is done with a custom taxonomy. Just add <code>series</code> to the frontmatter on any content you want to group together.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
-</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Example to demonstrate how to use series&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-10-04</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">draft</span>: <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">series</span>: <span style="color:#e6db74">&#34;How to use poison&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;Hugo&#34;</span>]
-</span></span><span style="display:flex;"><span>---</span></span></code></pre></div>
-<h3 id="katex">KaTeX</h3>
-<p>Make your mathematical notations pop.</p>
-<p>For notations that should appear on their own line, use the block quotes <code>$$ ... $$</code></p>
-<p>$$ 5 \times 5 = 25 $$</p>
-<p>For notations that should appear on the same line, use the inline quotes <code>$ ... $</code></p>
-<p><strong>Note</strong>: <em>Enabling KaTeX will add external dependencies.</em></p>
-<h3 id="tabs">Tabs</h3>
-<p>Some content is just better viewed in tabs.  There&rsquo;s a shortcode for that.</p>
-
-
-
-
-
-<div class="tabs-container">
-    <div class="tabs" role="tablist">
-
-	    
-        
-            
-            <button class="tab active" id="bfdace">
-            
-
-                First Tab
-            </button>
-
-	    
-        
-            
-            <button class="tab" id="bdfeca">
-            
-
-                Second Tab
-            </button>
-
-	    
-
-    </div>
-
-    
-    
-        
-            <div class="tabcontent bfdace" style="display:block;">
-        
-
-        <p>This is <strong>markdown</strong> content.</p>
-
-        
-        
-    </div>
-    
-    
-        
-            <div class="tabcontent bdfeca">
-        
-
-        
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>This is a code block.</span></span></code></pre></div>
-
-        
-        
-    </div>
-    
-</div>
-
-<hr>
-<p>Here&rsquo;s the code for the tabs above&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; tabs tabTotal=&#34;2&#34; &gt;}}
+  <p>Aruco Tag, also known as AR Tag, is widely used in navigation and tracking purposes in robotics field. With machine learning and modern image processing techniques, it is not difficult to detect and identify AR tags. However, in this post, I will try to use the most basic image processing tools of OpenCV for the approach to that problem.</p>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>There are four photos of random settings where there are posters containing the AR Tags. Each of the posters are somewhat distorted due to perspective of the camera. For demonstration purposes, only the first setting will be shown in the latter sections.</p>
+<table>
+<thead>
+<tr>
+<th><img src="/posts/a-simple-opencv/scene1.jpg#gallery" alt="Figure 1"></th>
+<th><img src="/posts/a-simple-opencv/scene2.jpg#gallery" alt="Figure 2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="/posts/a-simple-opencv/scene3.jpg#gallery" alt="Figure 3"></td>
+<td><img src="/posts/a-simple-opencv/scene4.jpg#gallery" alt="Figure 4"></td>
+</tr>
+</tbody>
+</table>
+<p>In these settings, there are two unique AR Tags as follows. Each of the previously shown photos have either one of these two AR tags.</p>
+<table>
+<thead>
+<tr>
+<th><img src="/posts/a-simple-opencv/marker1.jpg#gallery" alt="Figure 5"></th>
+<th><img src="/posts/a-simple-opencv/marker2.jpg#gallery" alt="Figure 6"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR Tag 1</td>
+<td>AR Tag 2</td>
+</tr>
+</tbody>
+</table>
+<p>The task is to use image processing to identify which picture contains which AR tag and mark them accordingly. In this approach, only raw image processing will be used, not using any machine learning algorithms. Let&rsquo;s break down the code in segments for understanding it better.</p>
+<h2 id="definition-segment">Definition Segment</h2>
+<p>Only two modules are imported, they are NumPy and OpenCV. The operations will be mostly using tools from OpenCV, NumPy being the module to only provide the basis of the data structure.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> cv2 <span style="color:#66d9ef">as</span> cv</span></span></code></pre></div>
+<p>The first user defined function is the ARCtoNPC() function which maps the AR tags firstly to a numpy array of 9x9 dimension, since the AR tags can be imagines to be a 9x9 grid of black and white blocks. In this 9 blocks, only the 5x5 blocks that form the inner square is useful as the blocks surrounding them are fully white containing no useful information. Therefore, the returned array is of 5x5 size consisting of 1 (balck) or 0 (white).<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ARCtoNPC</span>(img):
+</span></span><span style="display:flex;"><span>    img_shape<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>shape(img)[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>    img_n<span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>    dn<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    start<span style="color:#f92672">=</span>(img_n<span style="color:#f92672">-</span>dn)<span style="color:#f92672">*</span><span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>    parts<span style="color:#f92672">=</span>img_shape<span style="color:#f92672">/</span>img_n
+</span></span><span style="display:flex;"><span>    ret<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>zeros((dn,dn))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,dn):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,dn):
+</span></span><span style="display:flex;"><span>            a<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>i)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            b<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            c<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>j)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            d<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            m<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>sum(img[a:b,c:d]<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>int32))<span style="color:#f92672">/</span>(<span style="color:#ae81ff">255</span><span style="color:#f92672">*</span>(b<span style="color:#f92672">-</span>a)<span style="color:#f92672">*</span>(d<span style="color:#f92672">-</span>c))
+</span></span><span style="display:flex;"><span>            ret[i,j]<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> <span style="color:#66d9ef">if</span> m<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0.5</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ret</span></span></code></pre></div></p>
+<p>This function then can be used to convert two images, one containing the AR Tag of reference, and other containing the AR Tag to be detected. One of the array can be rotated by 90 degrees consecutively so that it is confirmed that at least one of the rotation matches with the AR Tag.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">matchDICT</span>(img1,img2):
+</span></span><span style="display:flex;"><span>    arr<span style="color:#f92672">=</span>ARCtoNPC(img1)
+</span></span><span style="display:flex;"><span>    arr2<span style="color:#f92672">=</span>ARCtoNPC(img2)
+</span></span><span style="display:flex;"><span>    ret<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>        text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        arr<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>rot90(arr)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> np<span style="color:#f92672">.</span>array_equal(arr,arr2):
+</span></span><span style="display:flex;"><span>            ret<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ret</span></span></code></pre></div>
+<p>These functions will be later used in final stages of the code after image processing. There are also many lists predefined to avert the array resizing complexity which will contain the array of pixels read from the image files of scenes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mark<span style="color:#f92672">=</span>[]			
+</span></span><span style="display:flex;"><span>img<span style="color:#f92672">=</span>[]			
+</span></span><span style="display:flex;"><span>imghsv<span style="color:#f92672">=</span>[]		
+</span></span><span style="display:flex;"><span>mask<span style="color:#f92672">=</span>[]			
+</span></span><span style="display:flex;"><span>res<span style="color:#f92672">=</span>[]			
+</span></span><span style="display:flex;"><span>thresh<span style="color:#f92672">=</span>[]		
+</span></span><span style="display:flex;"><span>cnt<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>shapes<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>roi<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>marks<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>approx<span style="color:#f92672">=</span>[]</span></span></code></pre></div>
+<p>This ends the first segment of the code. In the following segments, the defined data structures or functions will be used, as well as the OpenCV tools.</p>
+<h2 id="image-processing-tools">Image Processing Tools</h2>
+<p>At first, the images would be converted to NumPy arrays from the .jpg format. The <code>img</code> list would contain all the Numpy arrays corresponding to the images, and the <code>shapes</code> list would contain their corresponding dimensions for convenience of calculation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    img<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>imread(<span style="color:#e6db74">&#34;AR_Tag_Task/scene&#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;.jpg&#34;</span>))
+</span></span><span style="display:flex;"><span>    shapes<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>shape(img[i]))</span></span></code></pre></div>
+<p>Then, in the next loop, the major portion of image filtering and processing takes place. The following code contains all of that and it is explained in the next paragraph.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    imghsv<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>cvtColor(img[i],cv<span style="color:#f92672">.</span>COLOR_BGR2HSV)) 
+</span></span><span style="display:flex;"><span>    mask<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>inRange(imghsv[i],np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">150</span>])<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>uint8),np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">179</span>,<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">255</span>])<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>uint8)))
+</span></span><span style="display:flex;"><span>    res<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>bitwise_and(img[i],img[i],mask<span style="color:#f92672">=</span>mask[i]))
+</span></span><span style="display:flex;"><span>    res[i]<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>cvtColor(res[i],cv<span style="color:#f92672">.</span>COLOR_BGR2GRAY)
+</span></span><span style="display:flex;"><span>    thresh<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>threshold(res[i],<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>)[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    cnt<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>findContours(thresh[i], cv<span style="color:#f92672">.</span>RETR_TREE, cv<span style="color:#f92672">.</span>CHAIN_APPROX_SIMPLE)[<span style="color:#ae81ff">0</span>])</span></span></code></pre></div>
+<p>At first, the list <code>imghsv</code> is formed by taking the converted HSV (Hue, Saturation, Value) values of the images. HSV values are useful here because we know that the AR Tags would have low saturation and the white blocks of the AR Tags would have higher values as they would be quite bright.
+<img src="/posts/a-simple-opencv/scene0HSV.jpg#gallery" alt="Figure 7">
+Using this idea, inRange function is used and the image is masked and appended to the list <code>mask</code>. <code>[0,0,150]</code> is the lower bound representing moderate value and zero saturation and <code>[179,0,255]</code> is the upper bound representing zero saturation and high value (fully white).
+<img src="/posts/a-simple-opencv/scene0mask.jpg#gallery" alt="Figure 8">
+Then that mask is used in <code>bitwise_and</code> operation with the BGR format of the images previously save in the list <code>img</code> and appended in the list <code>res</code>. This list is then converted to grayscale format since grayscale format is less cumbersome for computations and also it has all the information necessary.
+<img src="/posts/a-simple-opencv/scene0res.jpg#gallery" alt="Figure 9">
+The grayscale format is then thresholded and appended to <code>thresh</code> list so that the array only contains the values 255 and 0 which helps in binary operation.
+<img src="/posts/a-simple-opencv/scene0thresh.jpg#gallery" alt="Figure 10">
+Then, finally, contours are detected from the thresholded arrays which are the boundaries of the white islands in the black sea for analogy and appended to the list <code>cnt</code>.
+<img src="/posts/a-simple-opencv/scene0HSVwithContours.jpg#gallery" alt="Figure 11"></p>
+<p>The contours are detected, but we have to determine which contours are nearly squared shaped. Because the AR Tags would have a squared shaped outer boundary. For that, the principle of geometry is used that the square of the arc length of the contour should be approximately 16 times the area of the contour. two values <code>12.8</code> and <code>19.2</code> are chosen for the range of tolerance. Before that, contours are filtered on the basis of their area, as there might be some tiny contours that would actually be square shaped because of the nature or the shape of pixels. The following code shows these processes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> cntss <span style="color:#f92672">in</span> cnt[i]:
+</span></span><span style="display:flex;"><span>        temp1<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>contourArea(cntss)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">25000</span><span style="color:#f92672">&lt;</span>temp1:
+</span></span><span style="display:flex;"><span>            temp2<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>arcLength(cntss,<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">12.8</span><span style="color:#f92672">*</span>temp1<span style="color:#f92672">&lt;</span>temp2<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">19.2</span><span style="color:#f92672">*</span>temp1:
+</span></span><span style="display:flex;"><span>                approx<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>approxPolyDP(cntss,<span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>cv<span style="color:#f92672">.</span>arcLength(cntss,<span style="color:#66d9ef">True</span>),<span style="color:#66d9ef">True</span>))</span></span></code></pre></div>
+<p>The list <code>approx</code> is appended with the final operation to convert the corresponding contours to their approximate polygon vertices, which should be the corners of the square shaped boundaries of the detected AR Tags. In the next loop, the polygon vertices are used to transform the perspective to form squares, which is how the actual square shaped AR Tags would look like. They are appended in the <code>roi</code> list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    temp<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>getPerspectiveTransform(approx[i]<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>float32),np<span style="color:#f92672">.</span>float32([[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>],[<span style="color:#ae81ff">383</span>,<span style="color:#ae81ff">0</span>],[<span style="color:#ae81ff">383</span>,<span style="color:#ae81ff">383</span>],[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">383</span>]]))
+</span></span><span style="display:flex;"><span>    roi<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>warpPerspective(thresh[i],temp,(<span style="color:#ae81ff">384</span>,<span style="color:#ae81ff">384</span>)))</span></span></code></pre></div>
+<p><img src="/posts/a-simple-opencv/scene0detectedAR.jpg#gallery" alt="Figure 12"></p>
+<h2 id="detecting-ar-tags">Detecting AR Tags</h2>
+<p>The two unique AR tags ,as previously mentioned, are then converted to numpy array of readable format and their center of black square is extracted and appended to the list <code>marks</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span>    mark<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>imread(<span style="color:#e6db74">&#34;AR_Tag_Task/marker&#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;.jpg&#34;</span>,<span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>    marks<span style="color:#f92672">.</span>append((mark[i])[<span style="color:#ae81ff">64</span>:<span style="color:#ae81ff">447</span>,<span style="color:#ae81ff">64</span>:<span style="color:#ae81ff">447</span>])	</span></span></code></pre></div>
+<p>Now the function that we previously defined to compare two AR tags comes handy, and it is used as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;MARKER 1&#34;</span> <span style="color:#66d9ef">if</span> matchDICT(marks[<span style="color:#ae81ff">0</span>],roi[i]) <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;MARKER 2&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>        cv<span style="color:#f92672">.</span>line(img[i],approx[i][j,<span style="color:#ae81ff">0</span>],approx[i][j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> j<span style="color:#f92672">==</span><span style="color:#ae81ff">3</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>],(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>),<span style="color:#ae81ff">20</span>)</span></span></code></pre></div>
+<p>This not only detects the AR Tag, but also draws line surrounding its perimeters to visualize it. The next segment of the codes are just for convenience, as they are two properly position the text showing the detection results, and convert the array of the images to the .jpg format and save them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    mom<span style="color:#f92672">=</span> cv<span style="color:#f92672">.</span>moments(approx[i])
+</span></span><span style="display:flex;"><span>    org<span style="color:#f92672">=</span>(int(mom[<span style="color:#e6db74">&#39;m10&#39;</span>]<span style="color:#f92672">/</span>mom[<span style="color:#e6db74">&#39;m00&#39;</span>])<span style="color:#f92672">-</span><span style="color:#ae81ff">200</span>,int(mom[<span style="color:#e6db74">&#39;m01&#39;</span>]<span style="color:#f92672">/</span>mom[<span style="color:#e6db74">&#39;m00&#39;</span>])<span style="color:#f92672">+</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    cv<span style="color:#f92672">.</span>putText(img[i],text,org,cv<span style="color:#f92672">.</span>FONT_HERSHEY_SIMPLEX,<span style="color:#ae81ff">6</span>,(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">255</span>),<span style="color:#ae81ff">20</span>,cv<span style="color:#f92672">.</span>LINE_AA)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    cv<span style="color:#f92672">.</span>imwrite(<span style="color:#e6db74">&#34;AR_Tag_Task/scene&#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;final.jpg&#34;</span>,img[i]) </span></span></code></pre></div>
+<p><img src="/posts/a-simple-opencv/scene0final.jpg#gallery" alt="Figure 13"></p>
+<p>Similary, Two or more contours in the same image can also be identified. In my GitHub repository named <a href="">A-Simple-OpenCV-Code-For-ARTag-Detection</a>, I have put two codes, both following the same approach. The first code is the one discussed here, and the other one is for detecting two AR Tags in the same picture and determining the midpoint between their center-to-center distance.</p>
+<p>This problem was given as a task for recruitment in Team Interplaneter Software Sub-Team, which is the Mars Rover Team of BUET, in 2021. This is the solution that I had came up with, which I wanted to share for the readers.</p>
+<h2 id="the-complete-code">The Complete Code</h2>
+<p>The full code is shown below for convenience:</p>
+<h2 id="hahahugoshortcode43s11hbhb"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> cv2 <span style="color:#66d9ef">as</span> cv
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>{{% tab tabName=&#34;First Tab&#34; %}}
-</span></span><span style="display:flex;"><span>This is markdown content.
-</span></span><span style="display:flex;"><span>{{% /tab %}}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>{{&lt; tab tabName=&#34;Second Tab&#34; &gt;}}
-</span></span><span style="display:flex;"><span>{{&lt; highlight text &gt;}}
-</span></span><span style="display:flex;"><span>This is a code block.
-</span></span><span style="display:flex;"><span>{{&lt; /highlight &gt;}}
-</span></span><span style="display:flex;"><span>{{&lt; /tab &gt;}}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>{{&lt; /tabs &gt;}}</span></span></code></pre></div>
-<h3 id="mermaid-diagrams">Mermaid diagrams</h3>
-<p>There&rsquo;s a shortcode for embedding Mermaid diagrams.</p>
-<p><strong>Note</strong>: <em>Enabling Mermaid diagrams will add external dependencies.</em></p>
-
-
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-
-    const lsTheme = localStorage.getItem("theme")
-    const hugoTheme = document.body.classList.contains("dark-theme") ? "dark" : null
-    const currTheme = lsTheme ? lsTheme : hugoTheme;
-    const mermaidTheme = currTheme == "light" ? "default" : "dark"
-
-    mermaid.initialize({theme: mermaidTheme});
-</script>
-
-
-
-<div class="mermaid">
-sequenceDiagram
-participant Alice
-participant Bob
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts <br>prevail!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-
-</div>
-
-<p>Here&rsquo;s the code for the diagram above:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; mermaid &gt;}}
-</span></span><span style="display:flex;"><span>sequenceDiagram
-</span></span><span style="display:flex;"><span>participant Alice
-</span></span><span style="display:flex;"><span>participant Bob
-</span></span><span style="display:flex;"><span>Alice-&gt;&gt;John: Hello John, how are you?
-</span></span><span style="display:flex;"><span>loop Healthcheck
-</span></span><span style="display:flex;"><span>    John-&gt;&gt;John: Fight against hypochondria
-</span></span><span style="display:flex;"><span>end
-</span></span><span style="display:flex;"><span>Note right of John: Rational thoughts &lt;br&gt;prevail!
-</span></span><span style="display:flex;"><span>John--&gt;&gt;Alice: Great!
-</span></span><span style="display:flex;"><span>John-&gt;&gt;Bob: How about you?
-</span></span><span style="display:flex;"><span>Bob--&gt;&gt;John: Jolly good!
-</span></span><span style="display:flex;"><span>{{&lt; /mermaid &gt;}}</span></span></code></pre></div>
-<h3 id="plantuml-diagrams">PlantUML diagrams</h3>
-<p>There&rsquo;s a shortcode for embedding PlantUML diagrams.</p>
-<p><strong>Note</strong>: <em>Enabling PlantUML diagrams will add external dependencies.</em></p>
-
-
-
-<script language="javascript" type="text/javascript" src="/js/plantuml-bundle.min.a92db050d61b01672d34acb6dbd49102b07a63b8d88d74d1599abd8b05144594.js"></script>
-
-
-
-<span id="plantuml-foo" style="display:none">
-a -&gt; b
-b -&gt; c
-</span>
-<img class="plantuml" id="plantuml-foo">
-
-<p>Here&rsquo;s the code for the diagram above:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;span id=&#34;plantuml-foo&#34; style=&#34;display:none&#34;&gt;
-</span></span><span style="display:flex;"><span>a -&amp;gt; b
-</span></span><span style="display:flex;"><span>b -&amp;gt; c
-</span></span><span style="display:flex;"><span>&lt;/span&gt;
-</span></span><span style="display:flex;"><span>&lt;img class=&#34;plantuml&#34; id=&#34;plantuml-foo&#34;&gt;</span></span></code></pre></div>
-<h2 id="installation">Installation</h2>
-<p>First, clone this repository into your <code>themes</code> directory:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git clone https://github.com/lukeorth/poison.git themes/poison --depth=1</span></span></code></pre></div>
-<p>Next, specify <code>poison</code> as the default theme in your config.toml file by adding the following line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>theme = &#34;poison&#34;</span></span></code></pre></div>
-<p>Lastly, if there are any future updates to this repository that you wish to include in your local copy, these can be retrieved by running:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>cd themes/poison
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git pull</span></span></code></pre></div>
-<p>For more information on how to get started with Hugo and themes, read the official <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">quick start guide</a>.</p>
-<h2 id="how-to-configure">How to Configure</h2>
-<p>After successfully installing <em>Poison</em>, the last step is to configure it.</p>
-<h3 id="the-sidebar-menu">The sidebar menu</h3>
-<p>Any items you want displayed in your sidebar menu <em>must</em> satisfy two requirements.  They must:</p>
-<ol>
-<li>Have a corresponding markdown file in your <em>/content/</em> directory.</li>
-<li>Be declared in your <em>config.toml</em> file (example below).</li>
-</ol>
-<p>There are two types of menu items:</p>
-<ol>
-<li><strong>Single Page</strong> &ndash; The <em>About</em> menu item (to the left) is a good example of this.  It displays a direct link to an individual page.</li>
-<li><strong>List</strong> &ndash; The <em>Posts</em> menu item is a good example of this.  It displays a directory and dynamically lists the contents (i.e. pages) contained by date.  List items have two optional configurations: a subheading (like the <em>Recent</em> subheading that appears on the menu to the left), and a maximum number of items to display.</li>
-</ol>
-<p>The sidebar menu items are configured with a dictionary value in your <em>config.toml</em> file.  I&rsquo;ve included an example below.  Additionally, there is a placeholder for this in the <em>config.toml</em> file shown in the next section.</p>
-<p><strong>Remember</strong>: You must have a markdown file present at the path specified for the menu item to be displayed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">menu</span> = [
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Dict keys:</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Name:         The name to display on the menu.</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># URL:          The directory relative to the content directory.</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># HasChildren:  If the directory&#39;s files should be listed.  Default is true.</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Limit:        If the files should be listed, how many should be shown.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># SINGLE PAGE</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Note that you must put your markdown file </span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># inside of a directory with the same name.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Example:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... /content/about/about.md</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;About&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>, <span style="color:#a6e22e">HasChildren</span> = <span style="color:#66d9ef">false</span>},
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># LIST</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This example has a subheading of &#34;Recent&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># and will display up to 5 items.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Example:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... /content/posts/introducing-poison.md</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Posts&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>, <span style="color:#a6e22e">Pre</span> = <span style="color:#e6db74">&#34;Recent&#34;</span>, <span style="color:#a6e22e">HasChildren</span> = <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">Limit</span> = <span style="color:#ae81ff">5</span>},
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Example of a list without a subheading or limit.</span>
-</span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Projects&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/projects/&#34;</span>},
-</span></span><span style="display:flex;"><span>    ]</span></span></code></pre></div>
-<h3 id="the-front-page">The front page</h3>
-<p>When visiting the base url for the site, i.e. <code>your.domain.com/</code>, a paginated feed of your recently added content is displayed in reverse chronological order. By default, only content in the &ldquo;posts&rdquo; <a href="https://gohugo.io/content-management/page-bundles/" target="_blank">page bundle</a> is displayed. You can configure a list of page bundle names to be included on this page by adding the <code>front_page_content</code> parameter to your config.toml file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">front_page_content</span> = [<span style="color:#e6db74">&#34;posts&#34;</span>, <span style="color:#e6db74">&#34;projects&#34;</span>]</span></span></code></pre></div>
-<h3 id="example-config">Example config</h3>
-<p>I recommend starting by copying/pasting the following code into your config.toml file.  Once you see how it looks, play with the settings as needed.</p>
-<p><strong>NOTE</strong>: To display an image in your sidebar, you&rsquo;ll need to uncomment the <code>brand_image</code> path below and have it point to an image file in your project.  The path is relative to the <code>static</code> directory.  If you don&rsquo;t have an image, just leave this line commented out.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;/&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;poison&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pluralizelisttitles</span> = <span style="color:#66d9ef">false</span>   <span style="color:#75715e"># removes the automatically appended &#34;s&#34; on sidebar entries</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># NOTE: If using Disqus as commenting engine, uncomment and configure this line</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># disqusShortname = &#34;yourDisqusShortname&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span> = <span style="color:#e6db74">&#34;Poison&#34;</span>                      <span style="color:#75715e"># name of your site - appears in the sidebar</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># brand_image = &#34;/images/test.jpg&#34;    # path to the image shown in the sidebar</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Update this description...&#34;</span> <span style="color:#75715e"># Used as default meta description if not specified in front matter</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dark_mode</span> = <span style="color:#66d9ef">true</span>                      <span style="color:#75715e"># optional - defaults to false</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># favicon = &#34;favicon.png&#34;             # path to favicon (defaults to favicon.png)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># MENU PLACEHOLDER</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Menu dict keys:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Name:         The name to display on the menu.</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># URL:          The directory relative to the content directory.</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># HasChildren:  If the directory&#39;s files should be listed.  Default is true.</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Limit:        If the files should be listed, how many should be shown.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">menu</span> = [
-</span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;About&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>, <span style="color:#a6e22e">HasChildren</span> = <span style="color:#66d9ef">false</span>},
-</span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Posts&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>, <span style="color:#a6e22e">Pre</span> = <span style="color:#e6db74">&#34;Recent&#34;</span>, <span style="color:#a6e22e">HasChildren</span> = <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">Limit</span> = <span style="color:#ae81ff">5</span>},
-</span></span><span style="display:flex;"><span>    ]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Links to your socials.  Comment or delete any you don&#39;t need/use. </span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">discord_url</span> = <span style="color:#e6db74">&#34;https://discord.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">email_url</span> = <span style="color:#e6db74">&#34;mailto://user@domain&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">facebook_url</span> = <span style="color:#e6db74">&#34;https://facebook.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">flickr_url</span> = <span style="color:#e6db74">&#34;https://flickr.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">github_url</span> = <span style="color:#e6db74">&#34;https://github.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">gitlab_url</span> = <span style="color:#e6db74">&#34;https://gitlab.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">instagram_url</span> = <span style="color:#e6db74">&#34;https://instagram.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">linkedin_url</span> = <span style="color:#e6db74">&#34;https://linkedin.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mastodon_url</span> = <span style="color:#e6db74">&#34;https://mastodon.social&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">matrix_url</span> = <span style="color:#e6db74">&#34;https://matrix.org&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">telegram_url</span> = <span style="color:#e6db74">&#34;https://telegram.org&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tryhackme_url</span> = <span style="color:#e6db74">&#34;https://tryhackme.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">twitter_url</span> = <span style="color:#e6db74">&#34;https://twitter.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmpp_url</span> = <span style="color:#e6db74">&#34;https://xmpp.org&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">youtube_url</span> = <span style="color:#e6db74">&#34;https://youtube.com&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: If you don&#39;t want to use RSS, comment or delete the following lines</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss_icon</span> = <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss_section</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Hex colors for your sidebar.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">moon_sun_background_color</span> = <span style="color:#e6db74">&#34;#515151&#34;</span>   <span style="color:#75715e"># default is #515151</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">moon_sun_color</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>                 <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_a_color</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>                <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_bg_color</span> = <span style="color:#e6db74">&#34;#202020&#34;</span>            <span style="color:#75715e"># default is #202020</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_h1_color</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>               <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_img_border_color</span> = <span style="color:#e6db74">&#34;#515151&#34;</span>    <span style="color:#75715e"># default is #515151</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_p_color</span> = <span style="color:#e6db74">&#34;#909090&#34;</span>             <span style="color:#75715e"># default is #909090</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_socials_color</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>          <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Hex colors for your content in light mode.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_color</span> = <span style="color:#e6db74">&#34;#000&#34;</span>                     <span style="color:#75715e"># default is #000</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_background_color</span> = <span style="color:#e6db74">&#34;#E5E5E5&#34;</span>       <span style="color:#75715e"># default is #E5E5E5</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_block_color</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>               <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_block_background_color</span> = <span style="color:#e6db74">&#34;#272822&#34;</span> <span style="color:#75715e"># default is #272822</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">content_bg_color</span> = <span style="color:#e6db74">&#34;#FAF9F6&#34;</span>            <span style="color:#75715e"># default is #FAF9F6</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">date_color</span> = <span style="color:#e6db74">&#34;#515151&#34;</span>                  <span style="color:#75715e"># default is #515151</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">link_color</span> = <span style="color:#e6db74">&#34;#268BD2&#34;</span>                  <span style="color:#75715e"># default is #268BD2</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">list_color</span> = <span style="color:#e6db74">&#34;#5A5A5A&#34;</span>                  <span style="color:#75715e"># default is #5A5A5A</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post_title_color</span> = <span style="color:#e6db74">&#34;#303030&#34;</span>            <span style="color:#75715e"># default is #303030</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_border_color</span> = <span style="color:#e6db74">&#34;#E5E5E5&#34;</span>          <span style="color:#75715e"># default is #E5E5E5</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_stripe_color</span> = <span style="color:#e6db74">&#34;#F9F9F9&#34;</span>          <span style="color:#75715e"># default is #F9F9F9</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">text_color</span> = <span style="color:#e6db74">&#34;#222&#34;</span>                     <span style="color:#75715e"># default is #222</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Hex colors for your content in dark mode</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_color_dark</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>                        <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_background_color_dark</span> = <span style="color:#e6db74">&#34;#515151&#34;</span>          <span style="color:#75715e"># default is #515151</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_block_color_dark</span> = <span style="color:#e6db74">&#34;#FFF&#34;</span>                  <span style="color:#75715e"># default is #FFF</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_block_background_color_dark</span> = <span style="color:#e6db74">&#34;#272822&#34;</span>    <span style="color:#75715e"># default is #272822</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">content_bg_color_dark</span> = <span style="color:#e6db74">&#34;#121212&#34;</span>               <span style="color:#75715e"># default is #121212</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">date_color_dark</span> = <span style="color:#e6db74">&#34;#9A9A9A&#34;</span>                     <span style="color:#75715e"># default is #9A9A9A</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">link_color_dark</span> = <span style="color:#e6db74">&#34;#268BD2&#34;</span>                     <span style="color:#75715e"># default is #268BD2</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">list_color_dark</span> = <span style="color:#e6db74">&#34;#9D9D9D&#34;</span>                     <span style="color:#75715e"># default is #9D9D9D</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post_title_color_dark</span> = <span style="color:#e6db74">&#34;#DBE2E9&#34;</span>               <span style="color:#75715e"># default is #DBE2E9</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_border_color_dark</span> = <span style="color:#e6db74">&#34;#515151&#34;</span>             <span style="color:#75715e"># default is #515151</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_stripe_color_dark</span> = <span style="color:#e6db74">&#34;#202020&#34;</span>             <span style="color:#75715e"># default is #202020</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">text_color_dark</span> = <span style="color:#e6db74">&#34;#EEE&#34;</span>                        <span style="color:#75715e"># default is #EEE</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: If using Remark42 as commenting engine, uncomment and configure these lines</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># remark42 = true</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># remark42_host = &#34;https://yourhost.com&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># remark42_site_id = &#34;your_site_id&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ARCtoNPC</span>(img):
+</span></span><span style="display:flex;"><span>    img_shape<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>shape(img)[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>    img_n<span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>    dn<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    start<span style="color:#f92672">=</span>(img_n<span style="color:#f92672">-</span>dn)<span style="color:#f92672">*</span><span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>    parts<span style="color:#f92672">=</span>img_shape<span style="color:#f92672">/</span>img_n
+</span></span><span style="display:flex;"><span>    ret<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>zeros((dn,dn))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,dn):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,dn):
+</span></span><span style="display:flex;"><span>            a<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>i)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            b<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            c<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>j)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            d<span style="color:#f92672">=</span>int((start<span style="color:#f92672">+</span>j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>parts)
+</span></span><span style="display:flex;"><span>            m<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>sum(img[a:b,c:d]<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>int32))<span style="color:#f92672">/</span>(<span style="color:#ae81ff">255</span><span style="color:#f92672">*</span>(b<span style="color:#f92672">-</span>a)<span style="color:#f92672">*</span>(d<span style="color:#f92672">-</span>c))
+</span></span><span style="display:flex;"><span>            ret[i,j]<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> <span style="color:#66d9ef">if</span> m<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0.5</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ret
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: The following three params are optional and are used to create meta tags + enhance SEO.</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># og_image = &#34;&#34;                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url</span>
-</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># this is also used in the schema output as well. Image is resized to max 1200x630</span>
-</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># For this to work though og_image and brand_url must be a path inside the assets directory</span>
-</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># e.g. /assets/images/site/og-image.png becomes images/site/og-image.png</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># publisher_icon = &#34;&#34;                 # path to publisher icon - defaults to favicon, used in schema</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">matchDICT</span>(img1,img2):
+</span></span><span style="display:flex;"><span>    arr<span style="color:#f92672">=</span>ARCtoNPC(img1)
+</span></span><span style="display:flex;"><span>    arr2<span style="color:#f92672">=</span>ARCtoNPC(img2)
+</span></span><span style="display:flex;"><span>    ret<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>        text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        arr<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>rot90(arr)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> np<span style="color:#f92672">.</span>array_equal(arr,arr2):
+</span></span><span style="display:flex;"><span>            ret<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ret
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>mark<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>img<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>imghsv<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>mask<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>res<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>thresh<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>cnt<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>shapes<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>roi<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>marks<span style="color:#f92672">=</span>[]
+</span></span><span style="display:flex;"><span>approx<span style="color:#f92672">=</span>[]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">series</span> = <span style="color:#e6db74">&#39;series&#39;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tags</span> = <span style="color:#e6db74">&#39;tags&#39;</span></span></span></code></pre></div>
-<h3 id="custom-css">Custom CSS</h3>
-<p>You can override any setting in Poison&rsquo;s static CSS files by adding your own <code>/assets/css/custom.css</code> file. For example, if you want to override the title font and font size, you could add this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>.<span style="color:#a6e22e">sidebar-about</span> <span style="color:#a6e22e">h1</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-size</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">1.4</span><span style="color:#a6e22e">em</span><span style="color:#960050;background-color:#1e0010">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-family</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;Monaco&#34;</span>, <span style="color:#a6e22e">monospace</span><span style="color:#960050;background-color:#1e0010">;</span>
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-<h2 id="suggestions--contributions">Suggestions / Contributions</h2>
-<p>Please feel free to add suggestions for new features by opening a new issue in GitHub.  If you like the theme, let us know in the comments below!</p>
-<p>A big shout out and <em>thank you</em> to these top contributors:</p>
-<ul>
-<li><a href="https://github.com/traveltissues" target="_blank">Darius Makovsky (traveltissues)</a></li>
-<li><a href="https://github.com/delroth" target="_blank">Pierre Bourdon (delroth)</a></li>
-<li><a href="https://github.com/KarlAustin" target="_blank">Karl Austin (KarlAustin)</a></li>
-<li><a href="https://github.com/Diogo-Almeida3" target="_blank">Diogo Almeida (Diogo-Almeida3)</a></li>
-<li><a href="https://github.com/eyegog" target="_blank">Ayden Holmes (eyegog)</a></li>
-</ul>
-<hr>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    img<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>imread(<span style="color:#e6db74">&#34;AR_Tag_Task/scene&#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;.jpg&#34;</span>))
+</span></span><span style="display:flex;"><span>    shapes<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>shape(img[i]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    imghsv<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>cvtColor(img[i],cv<span style="color:#f92672">.</span>COLOR_BGR2HSV)) 
+</span></span><span style="display:flex;"><span>    mask<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>inRange(imghsv[i],np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">150</span>])<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>uint8),np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">179</span>,<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">255</span>])<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>uint8)))
+</span></span><span style="display:flex;"><span>    res<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>bitwise_and(img[i],img[i],mask<span style="color:#f92672">=</span>mask[i]))
+</span></span><span style="display:flex;"><span>    res[i]<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>cvtColor(res[i],cv<span style="color:#f92672">.</span>COLOR_BGR2GRAY)
+</span></span><span style="display:flex;"><span>    thresh<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>threshold(res[i],<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>)[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    cnt<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>findContours(thresh[i], cv<span style="color:#f92672">.</span>RETR_TREE, cv<span style="color:#f92672">.</span>CHAIN_APPROX_SIMPLE)[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> cntss <span style="color:#f92672">in</span> cnt[i]:
+</span></span><span style="display:flex;"><span>        temp1<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>contourArea(cntss)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">25000</span><span style="color:#f92672">&lt;</span>temp1:
+</span></span><span style="display:flex;"><span>            temp2<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>arcLength(cntss,<span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">12.8</span><span style="color:#f92672">*</span>temp1<span style="color:#f92672">&lt;</span>temp2<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">19.2</span><span style="color:#f92672">*</span>temp1:
+</span></span><span style="display:flex;"><span>                approx<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>approxPolyDP(cntss,<span style="color:#ae81ff">0.1</span><span style="color:#f92672">*</span>cv<span style="color:#f92672">.</span>arcLength(cntss,<span style="color:#66d9ef">True</span>),<span style="color:#66d9ef">True</span>))
+</span></span><span style="display:flex;"><span>                                                         
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    temp<span style="color:#f92672">=</span>cv<span style="color:#f92672">.</span>getPerspectiveTransform(approx[i]<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>float32),np<span style="color:#f92672">.</span>float32([[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>],[<span style="color:#ae81ff">383</span>,<span style="color:#ae81ff">0</span>],[<span style="color:#ae81ff">383</span>,<span style="color:#ae81ff">383</span>],[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">383</span>]]))
+</span></span><span style="display:flex;"><span>    roi<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>warpPerspective(thresh[i],temp,(<span style="color:#ae81ff">384</span>,<span style="color:#ae81ff">384</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span>    mark<span style="color:#f92672">.</span>append(cv<span style="color:#f92672">.</span>imread(<span style="color:#e6db74">&#34;AR_Tag_Task/marker&#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;.jpg&#34;</span>,<span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>    marks<span style="color:#f92672">.</span>append((mark[i])[<span style="color:#ae81ff">64</span>:<span style="color:#ae81ff">447</span>,<span style="color:#ae81ff">64</span>:<span style="color:#ae81ff">447</span>])  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;MARKER 1&#34;</span> <span style="color:#66d9ef">if</span> matchDICT(marks[<span style="color:#ae81ff">0</span>],roi[i]) <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;MARKER 2&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>        cv<span style="color:#f92672">.</span>line(img[i],approx[i][j,<span style="color:#ae81ff">0</span>],approx[i][j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> j<span style="color:#f92672">==</span><span style="color:#ae81ff">3</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>],(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">0</span>),<span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    mom<span style="color:#f92672">=</span> cv<span style="color:#f92672">.</span>moments(approx[i])
+</span></span><span style="display:flex;"><span>    org<span style="color:#f92672">=</span>(int(mom[<span style="color:#e6db74">&#39;m10&#39;</span>]<span style="color:#f92672">/</span>mom[<span style="color:#e6db74">&#39;m00&#39;</span>])<span style="color:#f92672">-</span><span style="color:#ae81ff">200</span>,int(mom[<span style="color:#e6db74">&#39;m01&#39;</span>]<span style="color:#f92672">/</span>mom[<span style="color:#e6db74">&#39;m00&#39;</span>])<span style="color:#f92672">+</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    cv<span style="color:#f92672">.</span>putText(img[i],text,org,cv<span style="color:#f92672">.</span>FONT_HERSHEY_SIMPLEX,<span style="color:#ae81ff">6</span>,(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">255</span>),<span style="color:#ae81ff">20</span>,cv<span style="color:#f92672">.</span>LINE_AA)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4</span>):
+</span></span><span style="display:flex;"><span>    cv<span style="color:#f92672">.</span>imwrite(<span style="color:#e6db74">&#34;AR_Tag_Task/scene&#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;final.jpg&#34;</span>,img[i]) </span></span></code></pre></div></h2>
+
   
   <div class="footer">
     
@@ -885,30 +708,12 @@ b -&gt; c
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#features">Features</a>
-      <ul>
-        <li><a href="#light--dark-mode">Light &amp; dark mode</a></li>
-        <li><a href="#table-of-contents">Table of contents</a></li>
-        <li><a href="#comments">Comments</a></li>
-        <li><a href="#analytics">Analytics</a></li>
-        <li><a href="#email-newsletters">Email newsletters</a></li>
-        <li><a href="#series">Series</a></li>
-        <li><a href="#katex">KaTeX</a></li>
-        <li><a href="#tabs">Tabs</a></li>
-        <li><a href="#mermaid-diagrams">Mermaid diagrams</a></li>
-        <li><a href="#plantuml-diagrams">PlantUML diagrams</a></li>
-      </ul>
-    </li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#how-to-configure">How to Configure</a>
-      <ul>
-        <li><a href="#the-sidebar-menu">The sidebar menu</a></li>
-        <li><a href="#the-front-page">The front page</a></li>
-        <li><a href="#example-config">Example config</a></li>
-        <li><a href="#custom-css">Custom CSS</a></li>
-      </ul>
-    </li>
-    <li><a href="#suggestions--contributions">Suggestions / Contributions</a></li>
+    <li><a href="#problem-statement">Problem Statement</a></li>
+    <li><a href="#definition-segment">Definition Segment</a></li>
+    <li><a href="#image-processing-tools">Image Processing Tools</a></li>
+    <li><a href="#detecting-ar-tags">Detecting AR Tags</a></li>
+    <li><a href="#the-complete-code">The Complete Code</a></li>
+    <li><a href="#hahahugoshortcode43s11hbhb">HAHAHUGOSHORTCODE43s11HBHB</a></li>
   </ul>
 </nav>
     </div>

@@ -119,7 +119,7 @@
         --sidebar-a-color: #FB3;
         --sidebar-socials-color: #FB3;
         --text-color: #222;
-        --bkg-color: #DDD;
+        --bkg-color: #CCC;
         --post-title-color: #303030;
         --list-color: #4A4A4A;
         --link-color: #B02513;
@@ -465,10 +465,10 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | Themed with <a
 <h2 id="coordinate-frame-transformations">Coordinate Frame Transformations</h2>
 <p>For mathematical modeling of the testbench, rigid body assumptions are considered. The testbench itself is considered fully symmetrical and centered, therefore, all the CGs of each different components of the testbench coincide, thus the CG of the testbench can be assumed to be the origin for convenience. However, clamping the drone to the inner shaft of the testbench to cause its CG to also coincide with the origin would not be plausible, therefore, a positional vector would be assumed for the drone’s CG in this mathematical modeling effort. Due to symmetricity, the components of the testbench would have diagonal MOI, however, the clamped drone would cause the equivalent MOI of inner shaft to deviate from its diagonal form, so as its symmetricity.</p>
 <p>The testbench involves three different coordinate body frames for the rings and drone and one earth frame or the global frame where the testbench base is established. The following figure shows the body frames and the earth frame with their coordinates shifted for convenience of demonstration. The actual origin of all body frames coincides with the shaft frame as shown, which is the CG of the testbench.</p>
-<p><img src="/posts/images/Testbench-1.png#center" alt="Figure 1" title="The earth frame and the body frames representing outer, inner gimbals and inner shaft respectively"></p>
+<p><img src="/posts/testbench/Testbench-1.png#center" alt="Figure 1" title="The earth frame and the body frames representing outer, inner gimbals and inner shaft respectively"></p>
 <h2 id="earth-and-body-frames">Earth and Body Frames</h2>
 <p>To transfer from one frame to another, the following relation as can be seen in figure x, is established to determine the dynamics relationship between the frames.</p>
-<p><img src="/posts/images/Testbench-2.png#center" alt="Figure 2" title="Transfer matrices with their corresponding rotations and their relation with each frames"></p>
+<p><img src="/posts/testbench/Testbench-2.png#center" alt="Figure 2" title="Transfer matrices with their corresponding rotations and their relation with each frames"></p>
 <p>The symbols used here are explained in the next section. For deriving complete formulation of the testbench dynamics, knowledge of rotation matrices and their time derivatives are important. The following section briefly discusses the basic ideas of rotation matrices for the testbench modelling.</p>
 <h2 id="rotation-matrices-and-euler-angles">Rotation Matrices and Euler Angles</h2>
 <p>Rotation matrices transform coordinate systems by rotating coordinates around a specific axis. They reorient points or vectors without altering their relative distances, effectively changing the coordinate frame&rsquo;s orientation. Since the gimbal rig setup has multiple different frames with different independent orientations, using rotation matrices to transform from frame to frame is necessary. Rotation matrices for three axes could be defined by the following expressions.</p>
