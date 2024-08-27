@@ -28,7 +28,7 @@ import numpy as np
 import cv2 as cv
 {{< /highlight >}}
 
-The first user defined function is the ARCtoNPC() function which maps the AR tags firstly to a numpy array of 9x9 dimension, since the AR tags can be imagines to be a 9x9 grid of black and white blocks. In this 9 blocks, only the 5x5 blocks that form the inner square is useful as the blocks surrounding them are fully white containing no useful information. Therefore, the returned array is of 5x5 size consisting of 1 (balck) or 0 (white).  
+The first user defined function is the ARCtoNPC() function which maps the AR tags firstly to a numpy array of 9x9 dimension, since the AR tags can be imagined to be a 9x9 grid of black and white blocks. In this 9 blocks, only the 5x5 blocks that form the inner square is useful as the blocks surrounding them are fully black containing no useful information. Therefore, the returned array is of 5x5 size consisting of 1 (balck) or 0 (white).  
 {{< highlight python >}}
 
 def ARCtoNPC(img):
@@ -112,7 +112,7 @@ Then that mask is used in ```bitwise_and``` operation with the BGR format of the
 ![Figure 9](/posts/a-simple-opencv/scene0res.jpg#gallery)
 The grayscale format is then thresholded and appended to ```thresh``` list so that the array only contains the values 255 and 0 which helps in binary operation. 
 ![Figure 10](/posts/a-simple-opencv/scene0thresh.jpg#gallery)
-Then, finally, contours are detected from the thresholded arrays which are the boundaries of the white islands in the black sea for analogy and appended to the list ```cnt```.
+Then, finally, contours are detected from the thresholded arrays which are the boundaries of the black islands in the white sea for analogy and appended to the list ```cnt```.
 ![Figure 11](/posts/a-simple-opencv/scene0HSVwithContours.jpg#gallery)
 
 The contours are detected, but we have to determine which contours are nearly squared shaped. Because the AR Tags would have a squared shaped outer boundary. For that, the principle of geometry is used that the square of the arc length of the contour should be approximately 16 times the area of the contour. two values ```12.8``` and ```19.2``` are chosen for the range of tolerance. Before that, contours are filtered on the basis of their area, as there might be some tiny contours that would actually be square shaped because of the nature or the shape of pixels. The following code shows these processes.
