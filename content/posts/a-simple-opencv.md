@@ -259,6 +259,8 @@ for i in range(0,4):
     org=(int(mom['m10']/mom['m00'])-200,int(mom['m01']/mom['m00'])+200)
     cv.putText(img[i],text,org,cv.FONT_HERSHEY_SIMPLEX,6,(0,255,255),20,cv.LINE_AA)
 for i in range(0,4):
-    cv.imwrite("AR_Tag_Task/scene"+str(i+1)+"final.jpg",img[i]) 
-{{</highlight >}}
+    cv.imwrite("AR_Tag_Task/scene"+str(i+1)+"final.jpg",img[i])
+    
+{{ < /highlight > }}
+
 ---
