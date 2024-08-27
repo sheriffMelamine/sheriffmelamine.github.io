@@ -175,7 +175,10 @@ Similary, Two or more contours in the same image can also be identified. In my G
 This problem was given as a task for recruitment in Team Interplaneter Software Sub-Team, which is the Mars Rover Team of BUET, in 2021. This is the solution that I had came up with, which I wanted to share for the readers.
 ##	The Complete Code
 
+The full code is given here for convenience.
+
 {{< highlight python >}}
+
 import numpy as np
 import cv2 as cv
 
@@ -254,13 +257,12 @@ for i in range(0,4):
     text="MARKER 1" if matchDICT(marks[0],roi[i]) else "MARKER 2"
     for j in range(0,4):
         cv.line(img[i],approx[i][j,0],approx[i][j+1 if not j==3 else 0,0],(0,255,0),20)
-
     mom= cv.moments(approx[i])
     org=(int(mom['m10']/mom['m00'])-200,int(mom['m01']/mom['m00'])+200)
     cv.putText(img[i],text,org,cv.FONT_HERSHEY_SIMPLEX,6,(0,255,255),20,cv.LINE_AA)
 for i in range(0,4):
     cv.imwrite("AR_Tag_Task/scene"+str(i+1)+"final.jpg",img[i])
     
-{{ < /highlight > }}
+{{< /highlight >}}
 
 ---
