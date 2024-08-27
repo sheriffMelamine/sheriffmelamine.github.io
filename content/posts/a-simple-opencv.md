@@ -175,7 +175,6 @@ Similary, Two or more contours in the same image can also be identified. In my G
 This problem was given as a task for recruitment in Team Interplaneter Software Sub-Team, which is the Mars Rover Team of BUET, in 2021. This is the solution that I had came up with, which I wanted to share for the readers.
 ##	The Complete Code
 
-The full code is shown below for convenience:
 {{< highlight python >}}
 import numpy as np
 import cv2 as cv
