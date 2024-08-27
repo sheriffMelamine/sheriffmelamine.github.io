@@ -174,3 +174,5 @@ $$\vec\lambda_B=\textbf T_{OB}\vec\lambda_{OB}$$
 $$\vec\tau_B=\textbf T_{OB}\vec\tau_{OB}$$
 
 All these equations can be reduced to a single linear algebra equation, which is a tedious process, as multiple matrix multiplications would take place. Newton-Euler Formulation, however, is not useful for this setup as it requires reaction forces to be known for a definite solution. So until there would be a viable way that the reaction forces could be measured, the feasibilty of this model will have to wait.  
+
+---
