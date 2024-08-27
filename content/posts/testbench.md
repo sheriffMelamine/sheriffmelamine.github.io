@@ -20,7 +20,7 @@ The testbench involves three different coordinate body frames for the rings and 
 
 ##	Earth and Body Frames 
 
-To transfer from one frame to another, the following relation as can be seen in figure x, is established to determine the dynamics relationship between the frames. 
+To transfer from one frame to another, the following relation as can be seen in the following picture, is established to determine the dynamics relationship between the frames. 
 
  
 
