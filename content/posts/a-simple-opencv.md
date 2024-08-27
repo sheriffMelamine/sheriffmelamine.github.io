@@ -176,7 +176,6 @@ This problem was given as a task for recruitment in Team Interplaneter Software 
 ##	The Complete Code
 
 The full code is shown below for convenience:
-
 {{< highlight python >}}
 import numpy as np
 import cv2 as cv
