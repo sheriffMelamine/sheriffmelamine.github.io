@@ -21,7 +21,7 @@ Concert at BUET - 2023
 ![image](/gallery/images/concert-3.jpg#gallery "First Concert in my senior years")
 Concert at BUET - 2023
 ![image](/gallery/images/concert-1.jpg#gallery "During my first performance in BUET Rag Concert.")
-Concert at BUET - 2023
+Concert at BUET - 2022
 ![image](/gallery/images/tripsy-showcase.jpg#gallery "During our Project Showcasing for the Tricopter.")
 Junior Project Showcasing - 2022
 ![image](/gallery/images/tripsy-flight.gif#gallery "Our Tricopter finally on air!")
