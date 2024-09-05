@@ -73,12 +73,12 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     code_block_background_color = "#272822" # default is #272822
     content_bg_color = "#CCC"            # default is #FAF9F6
     date_color = "#515151"                  # default is #515151
-    link_color = "#B02513"                  # default is #268BD2
+    link_color = "#A01703"                  # default is #268BD2
     list_color = "#4A4A4A"                  # default is #5A5A5A
     post_title_color = "#303030"            # default is #303030
-    table_border_color = "#E5E5E5"          # default is #E5E5E5
-    table_stripe_color = "#F9F9F9"          # default is #F9F9F9
-    text_color = "#111"                     # default is #222
+    table_border_color = "#000"          # default is #E5E5E5
+    table_stripe_color = "#BBB"          # default is #F9F9F9
+    text_color = "#000"                     # default is #222
 
     # Hex colors for your content in dark mode
     code_color_dark = "#FFF"                        # default is #FFF

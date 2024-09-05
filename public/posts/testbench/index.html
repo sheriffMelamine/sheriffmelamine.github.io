@@ -118,14 +118,14 @@
         --sidebar-h1-color: #FB3;
         --sidebar-a-color: #FB3;
         --sidebar-socials-color: #FB3;
-        --text-color: #222;
+        --text-color: #000;
         --bkg-color: #CCC;
         --post-title-color: #303030;
         --list-color: #4A4A4A;
-        --link-color: #B02513;
+        --link-color: #A01703;
         --date-color: #515151;
-        --table-border-color: #E5E5E5;
-        --table-stripe-color: #F9F9F9;
+        --table-border-color: #000;
+        --table-stripe-color: #BBB;
         --code-color: #000;
         --code-background-color: #E5E5E5;
         --code-block-color: #FFF;
@@ -467,7 +467,7 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | Themed with <a
 <p>The testbench involves three different coordinate body frames for the rings and drone and one earth frame or the global frame where the testbench base is established. The following figure shows the body frames and the earth frame with their coordinates shifted for convenience of demonstration. The actual origin of all body frames coincides with the shaft frame as shown, which is the CG of the testbench.</p>
 <p><img src="/posts/testbench/Testbench-1.png#center" alt="Figure 1" title="The earth frame and the body frames representing outer, inner gimbals and inner shaft respectively"></p>
 <h2 id="earth-and-body-frames">Earth and Body Frames</h2>
-<p>To transfer from one frame to another, the following relation as can be seen in figure x, is established to determine the dynamics relationship between the frames.</p>
+<p>To transfer from one frame to another, the following relation as can be seen in the following picture, is established to determine the dynamics relationship between the frames.</p>
 <p><img src="/posts/testbench/Testbench-2.png#center" alt="Figure 2" title="Transfer matrices with their corresponding rotations and their relation with each frames"></p>
 <p>The symbols used here are explained in the next section. For deriving complete formulation of the testbench dynamics, knowledge of rotation matrices and their time derivatives are important. The following section briefly discusses the basic ideas of rotation matrices for the testbench modelling.</p>
 <h2 id="rotation-matrices-and-euler-angles">Rotation Matrices and Euler Angles</h2>
@@ -541,6 +541,7 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | Themed with <a
 <p>$$\vec\lambda_B=\textbf T_{OB}\vec\lambda_{OB}$$</p>
 <p>$$\vec\tau_B=\textbf T_{OB}\vec\tau_{OB}$$</p>
 <p>All these equations can be reduced to a single linear algebra equation, which is a tedious process, as multiple matrix multiplications would take place. Newton-Euler Formulation, however, is not useful for this setup as it requires reaction forces to be known for a definite solution. So until there would be a viable way that the reaction forces could be measured, the feasibilty of this model will have to wait.</p>
+<hr>
 
   
   <div class="footer">

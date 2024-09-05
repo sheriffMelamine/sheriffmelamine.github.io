@@ -3,8 +3,7 @@ title: "Gallery"
 draft: false
 layout: single
 ---
-
-
+ 
 |![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")|
 |:--:|
 |Undergraduate Thesis Defense - 2024|  
