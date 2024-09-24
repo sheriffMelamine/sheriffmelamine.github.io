@@ -100,13 +100,13 @@
 
 
 
-<meta name="generator" content="Hugo 0.133.0">
+<meta name="generator" content="Hugo 0.134.3">
 
 
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.8d93339d4fcc24bd71d196a2856af0f05da74ddd5a95ed0a4f7f1b87ba20e8cb.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.300373c4e018b0198c4a947b43a5e6782adb9996338a70f0043d31fb2f8aa693.css">
 
 
     
@@ -318,6 +318,46 @@
             
                 
                 
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/recent/">Projects</a>
+                    </li>
+                    
+                
+            
+                
+                
+            
+            
+                
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
                     <li class="heading">
                         <a href="/gallery/">Gallery</a>
                     </li>
@@ -465,37 +505,37 @@ Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | Themed with <a
 <h2 id="problem-statement">Problem Statement</h2>
 <p>There are four photos of random settings where there are posters containing the AR Tags. Each of the posters are somewhat distorted due to perspective of the camera. For demonstration purposes, only the first setting will be shown in the latter sections.</p>
 <table>
-<thead>
-<tr>
-<th><img src="/posts/a-simple-opencv/scene1.jpg#gallery" alt="Figure 1"></th>
-<th><img src="/posts/a-simple-opencv/scene2.jpg#gallery" alt="Figure 2"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><img src="/posts/a-simple-opencv/scene3.jpg#gallery" alt="Figure 3"></td>
-<td><img src="/posts/a-simple-opencv/scene4.jpg#gallery" alt="Figure 4"></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><img src="/posts/a-simple-opencv/scene1.jpg#gallery" alt="Figure 1"></th>
+          <th style="text-align: left"><img src="/posts/a-simple-opencv/scene2.jpg#gallery" alt="Figure 2"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><img src="/posts/a-simple-opencv/scene3.jpg#gallery" alt="Figure 3"></td>
+          <td style="text-align: left"><img src="/posts/a-simple-opencv/scene4.jpg#gallery" alt="Figure 4"></td>
+      </tr>
+  </tbody>
 </table>
 <p>In these settings, there are two unique AR Tags as follows. Each of the previously shown photos have either one of these two AR tags.</p>
 <table>
-<thead>
-<tr>
-<th><img src="/posts/a-simple-opencv/marker1.jpg#gallery" alt="Figure 5"></th>
-<th><img src="/posts/a-simple-opencv/marker2.jpg#gallery" alt="Figure 6"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AR Tag 1</td>
-<td>AR Tag 2</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><img src="/posts/a-simple-opencv/marker1.jpg#gallery" alt="Figure 5"></th>
+          <th style="text-align: left"><img src="/posts/a-simple-opencv/marker2.jpg#gallery" alt="Figure 6"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">AR Tag 1</td>
+          <td style="text-align: left">AR Tag 2</td>
+      </tr>
+  </tbody>
 </table>
 <p>The task is to use image processing to identify which picture contains which AR tag and mark them accordingly. In this approach, only raw image processing will be used, not using any machine learning algorithms. Let&rsquo;s break down the code in segments for understanding it better.</p>
 <h2 id="definition-segment">Definition Segment</h2>

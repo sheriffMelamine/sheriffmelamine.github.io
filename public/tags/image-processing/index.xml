@@ -13,7 +13,7 @@
       <link>//localhost:1313/posts/a-simple-opencv/</link>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/a-simple-opencv/</guid>
-      <description>Aruco Tag, also known as AR Tag, is widely used in navigation and tracking purposes in robotics field. With machine learning and modern image processing techniques, it is not difficult to detect and identify AR tags. However, in this post, I will try to use the most basic image processing tools of OpenCV for the approach to that problem.&#xA;Problem Statement There are four photos of random settings where there are posters containing the AR Tags.</description>
+      <description>&lt;p&gt;Aruco Tag, also known as AR Tag, is widely used in navigation and tracking purposes in robotics field. With machine learning and modern image processing techniques, it is not difficult to detect and identify AR tags. However, in this post, I will try to use the most basic image processing tools of OpenCV for the approach to that problem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;&#xA;&lt;p&gt;There are four photos of random settings where there are posters containing the AR Tags. Each of the posters are somewhat distorted due to perspective of the camera. For demonstration purposes, only the first setting will be shown in the latter sections.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
