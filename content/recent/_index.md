@@ -6,7 +6,7 @@ layout: single
 *Under Development...*
 
 ---
-# Past Projects  
+## Past Projects  
 **Undergraduate Thesis**  
 *Enhancing Quadcopter Trajectory Tracking with Model Predictive Controller and Linear Quadratic Integral Controller Using Linear Parameter Varying Approach under Variable Disturbances*  
 **Year:** 2023-2024 ![](/recent/images/Picture3.png#right)
