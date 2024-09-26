@@ -2,6 +2,7 @@
 title: "Gallery"
 draft: false
 layout: single
+hideToc: true
 ---
  
 |![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")|
