@@ -3,8 +3,12 @@ title: "Recent"
 draft: false
 layout: single
 ---
-*Under Development...*
-
+---
+## Publications  
+1. H. D. Touki, A. I. Ferdous, M. N. Hossan, *et al.*, **“Thermal Management on Forced Convective
+Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** `Ongoing`
+1. R. H. Chowdhury, A. I. Ferdous, A. Hossain, and K. A. Rahman, **“Enhancing Trajectory
+Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV under Variable Disturbances.”** *(Submitted to IEEE RAICON 2024)* `Under Review`
 ---
 ## Past Projects  
 **Undergraduate Thesis**  
@@ -32,9 +36,19 @@ PI and PID Controllers*
 * Simulation varying material parameter constant
 * Comparative analysis of control characteristics
 
+**Undergraduate Coursework: Thermo-Fluid System Design**  
+*Designing a Flow Induced Z-shaped Fin & Tube Heat Exchanger*    
+**Year:** 2023 ![](/recent/images/Picture5.jpg#right)  
+*[-> Link to External Document](http://dx.doi.org/10.13140/RG.2.2.27143.61606)*
+* Manufacturing with Aluminum Fins and Copper Tubes
+* Effectiveness-NTU method for Theoretical Calculations
+* Arduino Setup with Pump and Temperature Sensors
+* Experimental Evaluation of Temperature difference
+
 **Team Interplanetar: Software Development**  
 *GUI and Joystick Control using ROS, Kivy and Python for Rover Teleoperation and Arm Manipulation*  
-**Year:** 2023 ![](/recent/images/Picture3.jpg#right)
+**Year:** 2023 ![](/recent/images/Picture3.jpg#right)  
+*[-> Link to External Video](https://youtu.be/ui7ravSEjqk?si=xTIakNGyM3vaeThJ)*
 * Developing GUI with ROS and Python-Kivy framework
 * Developing Joystick Control using ROS and Python
 * Arm Manipulation and Grasping using Joystick
@@ -43,7 +57,8 @@ PI and PID Controllers*
 **Undergraduate Coursework: Electro-Mechanical System Design and Practice**  
 *Design and Fabrication of a Tricopter using ArduPilot and Pixhawk for Tracking Sound Sources using Open
 embeddeD Audition System (ODAS) via Raspberry Pi*  
-**Year:** 2022 ![pic](/recent/images/Picture1.jpg#right)
+**Year:** 2022 ![pic](/recent/images/Picture1.jpg#right)  
+*[-> Link to External Document](http://dx.doi.org/10.13140/RG.2.2.32176.78084)*  
 * Developing Tricopter with Pixhawk and ArduPilot
 * ReSpeaker Mic Array with Raspberry Pi for audition
 * Using ODAS and ROS for Sound Source Localization
