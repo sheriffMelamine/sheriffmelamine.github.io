@@ -6,7 +6,7 @@ layout: single
 ---
 ## Publications  
 1. H. D. Touki, A. I. Ferdous, M. N. Hossan, *et al.*, **“Thermal Management on Forced Convective
-Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** `Ongoing`
+Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** `Preparing for Submission`
 1. R. H. Chowdhury, A. I. Ferdous, A. Hossain, and K. A. Rahman, **“Enhancing Trajectory
 Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV under Variable Disturbances.”** *(Submitted to IEEE RAICON 2024)* `Under Review`
 ---
@@ -55,8 +55,7 @@ PI and PID Controllers*
 * Rover Base Teleoperation using GUI and Joystick
 
 **Undergraduate Coursework: Electro-Mechanical System Design and Practice**  
-*Design and Fabrication of a Tricopter using ArduPilot and Pixhawk for Tracking Sound Sources using Open
-embeddeD Audition System (ODAS) via Raspberry Pi*  
+*Sound Source Localizing Tricopter: using Open embeddeD Audition System (ODAS) via Raspberry Pi*  
 **Year:** 2022 ![pic](/recent/images/Picture1.jpg#right)  
 *[-> Link to External Document](http://dx.doi.org/10.13140/RG.2.2.32176.78084)*  
 * Developing Tricopter with Pixhawk and ArduPilot
