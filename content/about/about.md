@@ -5,7 +5,7 @@ draft: false
 
 Welcome to my personal website!
 
-I am **Ahmed Imtiaz Ferdous**, a mechanical engineering graduate with a strong focus on **Robotics**, **Control Theory**, and **Mathematical Modeling**. I am actively seeking research opportunities where I can apply my expertise to advance these fields, bridging the gap between theoretical concepts and real-world applications.
+I am **Ahmed Imtiaz Ferdous**, a mechanical engineering graduate with a strong focus on robotics, control theory, and mathematical modeling. I am actively seeking research opportunities where I can apply my expertise to advance these fields, bridging the gap between theoretical concepts and real-world applications.
 
 I have always been fascinated by how abstract mathematics can govern the physical reality, which naturally drew me to mathematics, physics, and programming. Throughout my undergraduate studies, I gained valuable experience in robotics through hands-on projects, along with a fundamental theoretical foundation in mathematical modeling and control theory, which deepened my interest in control systems and automation. My passion lies in applying mathematical and control theories to develop innovative solutions for complex, dynamic systems.
 
