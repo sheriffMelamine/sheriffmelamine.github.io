@@ -5,10 +5,12 @@ draft: false
 
 Welcome to my personal website!
 
-I am **Ahmed Imtiaz Ferdous**, a recent graduate with a degree in Mechanical Engineering from Bangladesh University of Engineering & Technology. I am currently seeking research opportunities where I can contribute to the fields of Robotics, Control Theory, and Mathematical Modeling. My passion lies in the intersection of theory and practice—I am fascinated by how abstract mathematical concepts can be applied to control real-world systems.
+I am **Ahmed Imtiaz Ferdous**, a mechanical engineering graduate with a strong focus on **Robotics**, **Control Theory**, and **Mathematical Modeling**. I am actively seeking research opportunities where I can apply my expertise to advance these fields, bridging the gap between theoretical concepts and real-world applications.
 
-During my undergraduate years, I balanced my coursework with hands-on robotics projects, which sparked my deep interest in the field. I am eager to continue exploring how control systems and automation can shape the future of technology.
+Throughout my undergraduate studies, I gained valuable experience in robotics through hands-on projects, which deepened my interest in control systems and automation. My passion lies in leveraging mathematical and control theories to develop innovative solutions for complex, dynamic systems.
 
-Outside of academics, I enjoy music, reading, and watching TV series. While I consider myself more of a “bedroom guitarist,” I’ve performed in live shows and aspire to create original compositions someday. Music, however, remains a personal passion rather than a professional pursuit.
+I believe that versatility leads to novel solutions, and novel solutions drive innovation. With this perspective, I aim to explore a broad range of research areas and develop as a researcher to uncover new knowledge and address complex challenges.
 
-On this website, I share a mix of technical articles and personal reflections. Feel free to explore my work and thoughts!
+Beyond academics, I have a keen interest in music, literature, and exploring various art forms. While music is a personal passion, I’ve had the opportunity to perform live and aspire to create original compositions in my spare time.
+
+This website is a platform where I share my technical projects, research work, and insights. I invite you to explore and connect with me if my work resonates with your interests.
