@@ -21,7 +21,8 @@ Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV unde
  
 **Undergraduate Thesis: Future Work**  
 *Designing Wireless Data Acquisition Setup using ESP8266-01 Microcontroller and AS5600 Magnetic Angle Encoder with MQTT Protocol*  
-**Year:** 2023-2024 ![pic](/recent/images/Picture2.jpg#right)
+**Year:** 2023-2024 ![pic](/recent/images/Picture2.jpg#right)  
+*[-> Link to Github Repository](https://github.com/sheriffMelamine/Undergraduate-Thesis-Testbench-setup)*
 * Encoder for roll, pitch and yaw angle
 * I2C Connection with ESP-01 and Encoders
 * Coding firmware for MQTT communication
