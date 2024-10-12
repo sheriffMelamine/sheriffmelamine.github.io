@@ -30,5 +30,5 @@ Promoted in August 2023
 Recruited in July 2021 
 ___
 
-[*Click to View Curriculum Vitae*](https://drive.google.com/file/d/1hE31j5-g41Swl8eJVyIG6-gslc9pRT_Z/view?usp=sharing "View CV")
+[*Click to View Short CV*](https://drive.google.com/file/d/1hE31j5-g41Swl8eJVyIG6-gslc9pRT_Z/view?usp=sharing "View CV")
 
