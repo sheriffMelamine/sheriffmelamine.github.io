@@ -6,9 +6,10 @@ layout: single
 ---
 ## Publications  
 1. H. D. Touki, A. I. Ferdous, M. N. Hossan, *et al.*, **“Thermal Management on Forced Convective
-Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** `TBD`
+Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** in International Conference on Applications of Fluid Dynamics, 2024. `To Be Presented`
 1. R. H. Chowdhury, A. I. Ferdous, A. Hossain, and K. A. Rahman, **“Enhancing Trajectory
-Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV under Variable Disturbances.”** *(Submitted to IEEE RAICON 2024)* `Under Review`
+Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV under Variable Disturbances.”** in IEEE International Conference on Robotics, Automation, Artificial-Intelligence and Internet
+of-Things, 2024. `To Be Published Soon`
 ---
 ## Past Projects  
 **Undergraduate Thesis**  
