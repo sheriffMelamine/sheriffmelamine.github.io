@@ -9,7 +9,7 @@ layout: single
 Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** in International Conference on Applications of Fluid Dynamics, 2024. `Presented On December`
 1. R. H. Chowdhury, A. I. Ferdous, A. Hossain, and K. A. Rahman, **“Enhancing Trajectory
 Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV under Variable Disturbances.”** in IEEE International Conference on Robotics, Automation, Artificial-Intelligence and Internet
-of-Things, 2024. `To Be Published Yet`
+of-Things, 2024. `To Be Published Yet` *[-> Link to PDF](https://drive.google.com/file/d/191PdVsUgC5S0W1IRr3Hufh6YyOROkGLw/view)*
 ---
 ## Past Projects  
 **Undergraduate Thesis**  
