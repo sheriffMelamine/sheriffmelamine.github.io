@@ -10,7 +10,7 @@ ___
 Graduated in 2024
 ___
 ##	Skills
-```C/C+``` ```Python``` ```MATLAB``` ```ROS``` ```Linux``` ```Raspberry Pi``` ```Arduino``` ```ML``` ```Git``` ```OpenCV``` ```SolidWorks``` ```Pixhawk``` ```Gazebo``` ```TensorFlow``` ```COMSOL``` ```LaTeX``` ```NumPy``` ```Kivy```
+```C/C+``` ```Python``` ```MATLAB``` ```ROS``` ```Linux``` ```Raspberry Pi``` ```Arduino``` ```ML``` ```Git``` ```OpenCV``` ```SolidWorks``` ```Pixhawk``` ```Gazebo``` ```TensorFlow``` ```COMSOL``` ```LaTeX``` ```NumPy``` ```SciPy``` ```Kivy```
 ___
 
 ##	Work Experience
