@@ -8,6 +8,8 @@ hideToc: true
 |![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")|
 |:--:|
 |Undergraduate Thesis Defense - 2024|  
+![image](/gallery/images/Thesis2.png#gallery "Testbench Developed for Thesis Future Work.")
+Drone Testbench Developed  - 2024
 ![image](/gallery/images/egcb.jpg#gallery "During my industrial training at EGCB.")
 Industrial Training at EGCB - 2023
 ![image](/gallery/images/rover-group.jpg#gallery "A group photo after the hectic journey of University Rover Challenge.")
