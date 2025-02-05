@@ -16,8 +16,6 @@ Industrial Training at EGCB - 2023
 University Rover Challenge - 2023
 ![image](/gallery/images/rover-ready.jpg#gallery "Rover finally ready to go!")
 University Rover Challenge - 2023
-![image](/gallery/images/rover-prepare.jpg#gallery "Setting up the rover for the contest")
-University Rover Challenge - 2023
 ![image](/gallery/images/concert-2.jpg#gallery "Group photo of us playing during Rag Concert.")
 Concert at BUET - 2023
 ![image](/gallery/images/concert-3.jpg#gallery "First Concert in my senior years")
