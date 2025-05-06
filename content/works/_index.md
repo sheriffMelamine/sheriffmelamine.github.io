@@ -5,11 +5,12 @@ layout: single
 ---
 ---
 ## Current Involvement
-**Research Collaboration**
-*Language Model Program Guided Task Planning for Robotics*
+**Research Collaboration**  
+*Language Model Program Guided Task Planning for Robotics*  
 **Year:** 2025 ![](/works/images/Picture_tamp.gif#right)
 * Using LLM for Robot Policy Guidance
-* Utilizing classic planners like PDDL for enhancement
+* Utilizing classic task planners like PDDL
+* Unification for Optimal Performance
 ---
 ## Publications  
 1. H. D. Touki, A. I. Ferdous, M. N. Hossan, *et al.*, **“Thermal Management on Forced Convective
