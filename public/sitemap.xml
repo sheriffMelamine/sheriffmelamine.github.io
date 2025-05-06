@@ -35,10 +35,10 @@
   </url><url>
     <loc>//localhost:1313/gallery/</loc>
   </url><url>
-    <loc>//localhost:1313/recent/</loc>
-  </url><url>
     <loc>//localhost:1313/resume/</loc>
   </url><url>
     <loc>//localhost:1313/series/</loc>
+  </url><url>
+    <loc>//localhost:1313/works/</loc>
   </url>
 </urlset>
