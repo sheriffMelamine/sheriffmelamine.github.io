@@ -5,9 +5,9 @@ layout: single
 ---
 ---
 ## Current Involvement
-**Research Collaboration**  
+**Research Collaboration**![](/works/images/Picture_tamp.gif#right)  
 *Language Model Program Guided Task Planning for Robotics*  
-**Year:** 2025 ![](/works/images/Picture_tamp.gif#right)
+**Year:** 2025 
 * Using LLM for Robot Policy Guidance
 * Utilizing classic task planners like PDDL
 * Unification for Optimal Performance
