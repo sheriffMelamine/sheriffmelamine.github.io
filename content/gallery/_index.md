@@ -5,8 +5,10 @@ layout: single
 hideToc: true
 ---
  
-|![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")|
+|![image](/gallery/images/hetero.gif#gallery "Created a heterogenous robot environment.")|
 |:--:|
+|Heterogeneous Robot Task Demo - 2025|
+|![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")|
 |Undergraduate Thesis Defense - 2024|  
 ![image](/gallery/images/Thesis2.png#gallery "Testbench Developed for Thesis Future Work.")
 Drone Testbench Developed  - 2024
