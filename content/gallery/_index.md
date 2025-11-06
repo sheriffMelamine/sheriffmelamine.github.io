@@ -5,9 +5,9 @@ layout: single
 hideToc: true
 ---
  
-|![image](/gallery/images/hetero.gif#gallery "Created a heterogenous robot environment.")|
+|![image](/gallery/images/hetero.gif#gallery "Created BT implementation of multi-robot system.")|
 |:--:|
-|Heterogeneous Robot Task Demo - 2025|
+|Multi-Robot Task Planning with Behavior Tree - 2025|
 |![image](/gallery/images/thesis.jpg#gallery "Finally! Defended my thesis. The last bit of my undergrad.")|
 |Undergraduate Thesis Defense - 2024|  
 ![image](/gallery/images/Thesis2.png#gallery "Testbench Developed for Thesis Future Work.")
