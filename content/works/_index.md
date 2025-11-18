@@ -6,18 +6,18 @@ layout: single
 ---
 ## Current Involvement
 **Research Collaboration**![](/works/images/Picture_tamp.gif#right)  
-*Language Model Program Guided Task Planning for Robotics*  
+*Long Horizon Task Planning in Heterogeneous Multi-Robot System*  
 **Year:** 2025 
-* Using LLM for Robot Policy Guidance
-* Utilizing classic task planners like PDDL
-* Unification for Optimal Performance
+* Developing long-horizon planners for multi-robot teams
+* Integrating heterogeneous robot capabilities for coordination
+* Designing scalable task-allocation and scheduling strategies
+* Improving robustness in dynamic multi-robot environments
 ---
 ## Publications  
-1. H. D. Touki, A. I. Ferdous, M. N. Hossan, *et al.*, **“Thermal Management on Forced Convective
-Micropolar Fluid Flow in a Cavity using P, PI, PID controllers.”** in International Conference on Applications of Fluid Dynamics, 2024. `Presented On December`
+1. H. D. Touki, M. N. Hossan, A. I. Ferdous, *et al.*, **“Thermal management of micropolar ferrofluid forced convective flow in a T-shaped vented chamber via a proportional-integral-derivative controller”** South African Journal of Chemical Engineering, 2025. [`DOI`](https://doi.org/10.1016/j.sajce.2025.11.011)
 1. R. H. Chowdhury, A. I. Ferdous, A. Hossain, and K. A. Rahman, **“Enhancing Trajectory
 Tracking of Quadrotor Using Feedback Linearization with MPC-LPV and LQI-LPV under Variable Disturbances.”** in IEEE International Conference on Robotics, Automation, Artificial-Intelligence and Internet
-of-Things, 2024. [`DOI`](https://doi.org/10.1109/RAAICON64172.2024.10928375) *[-> Link to PDF](https://drive.google.com/file/d/1Jx7o38zJN1AblcSErGYrsPQqknF84a7H/view?usp=drive_link)*
+of-Things, 2024. [`DOI`](https://doi.org/10.1109/RAAICON64172.2024.10928375) 
 ---
 ## Past Projects  
 **Undergraduate Thesis**  
